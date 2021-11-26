@@ -17,10 +17,9 @@ interface RatesResponse {
 }
 
 export const fetchRates = () => async (dispatch: AppDispatch) => {
-  const secret = process.env.REACT_APP_CURRENCY_SECRET_KEY || ''
   try {
     dispatch(currencySlice.actions.ratesFetching())
-    const response = await Http.get<RatesResponse>(`latest?access_key=${secret}&format=1`)
+    const response = await Http.get<RatesResponse>('/')
     const { rates, error } = response.data
     if (error) {
       dispatch(currencySlice.actions.ratesFetchingError(error.info))

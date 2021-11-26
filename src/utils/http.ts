@@ -1,9 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios'
-import dotenv from 'dotenv'
 
-dotenv.config()
-
-export const rootBackendUrl = '/api'
+export const rootBackendUrl = 'http://data.fixer.io/api/latest?access_key=cbf4df0de515db5e32100223cb3b4556&format=1'
 
 const axiosInstance = axios.create({
   baseURL: rootBackendUrl,

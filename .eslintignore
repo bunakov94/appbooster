@@ -4,5 +4,3 @@ public/dist/*
 
 jest.config.js
 
-src/setupProxy.js
-
