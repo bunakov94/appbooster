@@ -100,7 +100,7 @@
     "max-len": [
       "error",
       {
-        "code": 110,
+        "code": 120,
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true,
         "ignoreComments": true, // allow longer comments
@@ -177,6 +177,11 @@
       }
     ],
     "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off", //TODO: on
+    "@typescript-eslint/no-unsafe-call": "off", //TODO: on
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/jsx-wrap-multilines": "off",
     "@typescript-eslint/consistent-type-definitions": "warn",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/camelcase": "off",
