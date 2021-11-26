@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
-export const rootBackendUrl = process.env.REACT_APP_CURRENCY_ENDPOINT
+export const rootBackendUrl = '/api'
 
 const axiosInstance = axios.create({
   baseURL: rootBackendUrl,
